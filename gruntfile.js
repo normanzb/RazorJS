@@ -75,7 +75,11 @@ module.exports = function(grunt) {
         boss: true,
         evil: true,
         browser: true,
-        node: true
+        node: true,
+        globals: {
+            "define": true,
+            "require": true
+        }
       },
       files: ['<%= concat.browser.dest %>', '<%= concat.node.dest %>']
     },

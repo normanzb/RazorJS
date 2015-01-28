@@ -1,6 +1,6 @@
 /*
-  RazorJS 0.3.4
-  Copyright (c) 2013 Andy Edinborough (@andyedinborough)
+  RazorJS 0.3.5
+  Copyright (c) 2015 Andy Edinborough (@andyedinborough)
   Released under MIT License
 */
 (function(global, module, undefined){

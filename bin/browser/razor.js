@@ -1,6 +1,6 @@
 /*
-  RazorJS 0.3.4
-  Copyright (c) 2013 Andy Edinborough (@andyedinborough)
+  RazorJS 0.3.5
+  Copyright (c) 2015 Andy Edinborough (@andyedinborough)
   Released under MIT License
 */
 (function(global, module, undefined){
@@ -592,4 +592,9 @@ Razor.findView = function findViewInDocument(id, cb) {
 };
 Razor.getViewEtag = function(viewName){ return viewName; };
 global.Razor = Razor;
+if (global.define && global.define.amd) {
+    define(function () {
+        return Razor;
+    });
+}
 })(window);

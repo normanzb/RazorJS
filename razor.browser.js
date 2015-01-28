@@ -10,3 +10,8 @@ Razor.findView = function findViewInDocument(id, cb) {
 };
 Razor.getViewEtag = function(viewName){ return viewName; };
 global.Razor = Razor;
+if (global.define && global.define.amd) {
+    define(function () {
+        return Razor;
+    });
+}
